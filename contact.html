@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="sary/logo/pngegg(4).png" class="logo" alt="50"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="accueil.html">accueil</a></li>
+                <li><a href="shop.html">Voitures</a></li>
+                <li><a class="active"  href="contact.html">contact</a></li>
+                <li><a href="contact.html">a propos</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div> 
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" style="height: 40px;" src="sary/logo/pngegg(4).png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Adresse :</strong> 2345423102 logt 9 Ambohipo</p>
+            <p><strong>Phone :</strong> +261 34 02 478 61</p>
+            <p><strong>Heures :</strong> 10:00 - 19:00 , Lun - Ven</p>
+            <div class="follow">
+                <h4>Suivez nous</h4>
+                <div class="icon">
+                    <i class="fas fa-facebook-f"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-instagram"></i>
+                    <i class="fas fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>A propos</h4>
+            <a href="#">Informations </a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Conditions de vente </a>
+            <a href="#">Contactez nous </a>
+        </div>
+        <div class="col">
+            <h4>Mon compte</h4>
+            <a href="#">S'inscrire </a>
+            <a href="#">Ma carte </a>
+            <a href="#">Ma commande</a>
+            <a href="#">Aide</a>
+        </div>
+        <div class="install">
+            <h4>Installer notre Apk</h4>
+            <p>Téléchargez la sur facebook</p>
+            <div class="row">
+                <img style="height:40px;" src="sary/logo/pngegg(3).png" alt="">
+                <img style="height:40px;" src="sary/logo/pngegg(3).png" alt="">
+            </div>
+        </div>
+    </footer> 
+    <div class="copyright">
+        <p>@ 2021 , Tech2 etc - HTML CSS Mini Projet</p>
+    </div>
+
+    <script>
+        var MainImg = document.getElementById("MainImg") ;
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src ;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src ;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src ;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src ;
+        }
+    </script>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>

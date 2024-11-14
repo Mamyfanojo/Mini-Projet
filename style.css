@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    /* background: rgb(8, 165, 238); */
+    /* background: rgba(5, 18, 201, 0.473); */
+    /* background: rgba(3, 0, 0, 0.514); */
+    background: linear-gradient(to left ,rgba(44, 4, 187, 0.575),rgba(20, 20, 94, 0.616),rgba(29, 22, 46, 0.623));
+    /* overflow: hidden; */
+}
+.voit{
+    text-align: left;
+}
+.grid_countainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container{
+    text-align: center;
+    margin-top:40%;
+    left: 50%;
+    width: 100%;
+}
+.container span{
+    color: white;
+    text-transform: uppercase;
+    display: block;
+}
+.text1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s 1;
+}
+.text2{
+    font-size: 10px;
+    color: black;
+    z-index: 0;
+}
+
+@keyframes text {
+    0%{
+        color: linear-gradient(blue,red);
+        margin-bottom: -400px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -400px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -400px;
+    }
+}
+
+.boutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+button span{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+button{
+    font-size: 2em;
+    font-weight: bold;
+    background: rgb(152 , 13 , 251);
+    border: 0;
+    padding: 10px 20px;
+    transform: skewX(-15deg);
+    cursor: pointer;
+    transition: 0.2s;
+}
+button :hover{
+    padding-right: 40px;
+}
+button span.arrow{
+    margin-left: 20px;
+    position: relative;
+}
+button span.arrow i{
+    transform: skewX(15deg);
+    color: white;
+}
+
+button span.arrow i:nth-child(2){
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+button span.arrow i:nth-child(3){
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+button :hover i:nth-child(2){
+    right: -20px;
+}
+button :hover i:nth-child(2){
+    right: -40px;
+}
+
+a
+{
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    background-color: #667eea;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    transform: skewX(15deg);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(180%);
+}
+a:before,
+a:after
+{
+    content:'';
+    position:absolute;
+    width: 20px;
+    height: 3px;
+    background-color:rgb(4, 197, 204);
+    transition:0.3s;
+}
+a:before
+{
+    left: 0px;
+    top: -5px;
+}
+a:after
+{
+    right:0;
+    bottom:-5px
+}
+a:hover:before,
+a:hover:after{
+    width: 100%;
+}
